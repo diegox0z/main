@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fate Contacto</title>
+    <link rel="icon" href="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/35a85edf8db1cb13b7f8921ddb54564e92584b2f.jpg" type="image/x-icon">
+    <style>
+        #mi-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #mi-menu li {
+            float: left;
+        }
+
+        #mi-menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #mi-menu li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+<div id="mi-menu">
+<ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Peliculas.html">Peliculas</a></li>
+        <li><a href="Musica.html">Musica</a></li>
+        <li><a href="Imagenes.html">Imagenes</a></li>
+        <li><a href="Otros.html">Otros</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+    </div>
+    <br> <br>
+    <h1>Formulario de la pagina </h1>
+    <form action="url para procesar formulario" method="post"> 
+        <label for="nombre">Nombre:</label>
+        <input type="text" maxlength="50" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" maxlength="50" id="apellido" name="apellido" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+        <h3>Género</h3>
+        <input type="radio" name="grupo 1"> Hombre
+        <input type="radio" name="grupo 1"> Mujer
+        <input type="radio" name="grupo 1"> Otro<br><br>
+        <input type="checkbox"> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos<br><br>
+        <h2>Te ha resultado Interesante la pagina ?</h2>
+        <select id="opinion" name="opinion">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+            <option value="Mas o menos">Mas o menos</option>
+        </select>
+        <h2>Puedes añadir alguna opinion.</h2>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+    </form>
+</body>
+</html>
